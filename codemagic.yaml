@@ -1,6 +1,6 @@
 workflows:
   sample-workflow:
-    name: TrafficPulse workflow
+    name: BreedPick workflow
     max_build_duration: 120
     instance_type: mac_mini_m2
     integrations:
@@ -13,8 +13,8 @@ workflows:
         APP_STORE_CONNECT_KEY: breed_pick
         APP_STORE_APPLE_ID: 6784587851
         BUNDLE_ID: "com.breedingpick.BreedPick"
-        XCODE_PROJECT: "BreedPick.xcodeproj"
-        XCODE_SCHEME: "BreedPick"
+        XCODE_PROJECT: "BreedPickApp.xcodeproj"
+        XCODE_SCHEME: "BreedPickApp"
     scripts:
       - name: Clean and Resolve SPM Dependencies
         script: |
